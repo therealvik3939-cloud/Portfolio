@@ -1,0 +1,12 @@
+---
+import {renderAscii} from '../lib/ascii.mjs';
+---
+<div class="ascii-lab" id="ascii-lab">
+  <div class="lab-title"><span><i class="live-dot"></i> curiosity.exe</span><span class="lab-meta">ASCII / 3D</span></div>
+  <div class="ascii-stage" id="ascii-stage" role="img" aria-label="Interactive animated ASCII sculpture. Choose a shape below or move your pointer to rotate it.">
+    <pre id="ascii" aria-hidden="true">{renderAscii('sphere',0)}</pre>
+    <span class="axis axis-x" aria-hidden="true">+ x</span><span class="axis axis-y" aria-hidden="true">y +</span>
+  </div>
+  <div class="lab-controls"><div class="shape-controls" role="group" aria-label="ASCII shape"><button data-shape="sphere" aria-pressed="true">Sphere</button><button data-shape="torus" aria-pressed="false">Torus</button><button data-shape="wave" aria-pressed="false">Wave</button></div><button class="icon-button" id="ascii-pause" aria-label="Pause ASCII animation" aria-pressed="false">Ⅱ</button></div>
+  <div class="lab-bottom"><span id="ascii-hint">Move your pointer. Make some waves.</span><label>Speed <input id="ascii-speed" type="range" min="0.25" max="2" step="0.25" value="1" aria-label="ASCII animation speed" /></label></div>
+</div>

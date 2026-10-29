@@ -1,0 +1,10 @@
+export const profile={name:'Vishal KVS',email:'therealvik3939@gmail.com',github:'https://github.com/therealvik3939-cloud',linkedin:'https://www.linkedin.com/in/vishal-kvs-31b170351/'};
+export const projects=[
+ {id:'ml',category:'ml',number:'01',label:'Learning by doing',title:'Machine learning, hands-on.',description:'A growing collection of Python exercises, data exploration, and machine learning coursework. Small experiments. A deeper understanding.',tags:['Python','Machine learning','Coursework'],url:profile.github+'/ML_lab',detail:'Explore the week-by-week lab exercises, supporting data, and performance comparison scripts in the repository. This is a learning repository, with the source available to follow along.',ascii:'scatter'},
+ {id:'portfolio',category:'web',number:'02',label:'Design meets development',title:'A home for my curiosity.',description:'This little corner of the internet. Built with Astro, animated with GSAP, and made to feel a little different with every visit.',tags:['Astro','GSAP','Creative development'],url:profile.github+'/Portfolio',detail:'A static Astro site with a character-based 3D renderer, eight editor-inspired themes, keyboard navigation, and motion controls. Built to be lightweight, playful, and accessible.',ascii:'window'}
+];
+export const skills=[
+ {id:'languages',label:'Languages',items:['Python','Java','C++','SQL'],code:'const curiosity = true;\nwhile (curiosity) {\n  learn();\n  build();\n  repeat();\n}',note:'The foundations I use to turn an idea into working code.'},
+ {id:'ml',label:'AI & data',items:['NumPy','Pandas','scikit-learn','Neural networks'],code:'question → dataset\ndataset  → experiment\nexperiment → insight\ninsight → better questions',note:'Exploring patterns in data, one experiment at a time. Neural networks and deep learning are part of my coursework.'},
+ {id:'web',label:'Web & tools',items:['React','Node.js','Git','Linux'],code:'$ git checkout -b new-idea\n$ build something useful\n$ learn from the process\n$ git commit -m "keep going"',note:'Building interfaces, connecting the pieces, and learning in the open.'}
+];
